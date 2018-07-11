@@ -9,6 +9,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint:es": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx}\"",
     "lint": "npm run lint:es && npm run lint:style",
@@ -35,6 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.9.1",
+    "gh-pages": "^1.2.0",
     "prettier": "^1.13.5",
     "stylelint": "^9.3.0",
     "stylelint-config-prettier": "^3.3.0",
